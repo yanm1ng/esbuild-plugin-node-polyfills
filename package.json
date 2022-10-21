@@ -1,0 +1,41 @@
+{
+  "name": "esbuild-plugin-node-polyfills",
+  "version": "1.0.1",
+  "description": "Polyfill node built-in modules",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "NODE_ENV=production node build.js && tsc --emitDeclarationOnly",
+    "dev": "NODE_ENV=development node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanm1ng/esbuild-plugin-node-polyfills.git"
+  },
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "node",
+    "polyfill",
+    "polyfills"
+  ],
+  "author": "yanm1ng",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/yanm1ng/esbuild-plugin-node-polyfills/issues"
+  },
+  "homepage": "https://github.com/yanm1ng/esbuild-plugin-node-polyfills#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.2",
+    "esbuild": "^0.11.20",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "rollup-plugin-node-polyfills": "^0.2.1"
+  }
+}
