@@ -1,17 +1,17 @@
-# esbuild-plugin-node-polyfills
+# esbuild-plugin-node-builtin-polyfills
 
-Polyfill node built-in modules with `esbuild`.
+Polyfill node builtin modules with `esbuild`.
 
 ## Install
 
 ```sh
-yarn add -D esbuild-plugin-node-polyfills
+yarn add -D esbuild-plugin-node-builtin-polyfills
 ```
 
 or
 
 ```sh
-npm i -D esbuild-plugin-node-polyfills
+npm i -D esbuild-plugin-node-builtin-polyfills
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ Add to your esbuild plugins list:
 
 ```js
 const esbuild = require("esbuild");
-const { nodeBuiltInPolyfillsPlugin } = require("esbuild-plugin-node-polyfills");
+const { nodeBuiltInPolyfillsPlugin } = require("esbuild-plugin-node-builtin-polyfills");
 
 esbuild.build({
   ...
